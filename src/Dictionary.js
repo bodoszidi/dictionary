@@ -1,4 +1,3 @@
-import { tab } from "@testing-library/user-event/dist/tab";
 import { useState } from "react";
 
 export default function Dictionary() {
