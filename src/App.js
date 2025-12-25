@@ -10,7 +10,7 @@ function App() {
             <main>
                 <Dictionary />
             </main>
-            <footer>
+            <footer className="App-footer">
                 This page was coded by <a href="#">Szidonia Bodo</a>, hosted on{" "}
                 <a href="#">Netlify</a>, and the source can be found on{" "}
                 <a href="#">GitHub</a>.

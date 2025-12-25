@@ -1,16 +1,19 @@
 .App {
     text-align: center;
     background-color: #192959;
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    padding: 20px 20px;
+    margin: 15px;
 }
 
 .App-header {
     display: flex;
     justify-content: center;
-    font-family: "Irish Grover", system-ui;
-    font-weight: 400;
+
     font-size: 40px;
     color: #04bdb6;
 }
-footer{
-    color:#04bdb6
+footer {
+    color: #04bdb6;
 }
