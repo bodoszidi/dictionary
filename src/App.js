@@ -12,18 +12,19 @@ function App() {
             </main>
             <footer className="App-footer">
                 This page was coded by{" "}
-                <a href="https://szido-portfolio.netlify.app/" target="_blank">
+                <a href="https://szido-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">
                     Szidonia Bodo
                 </a>
                 , hosted on{" "}
                 <a
                     href="https://app.netlify.com/teams/bodoszidi/projects"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     Netlify
                 </a>
                 , and the source can be found on{" "}
-                <a href="https://github.com/bodoszidi" target="_blank">
+                <a href="https://github.com/bodoszidi" target="_blank" rel="noopener noreferrer">
                     GitHub
                 </a>
                 .
