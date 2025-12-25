@@ -11,9 +11,22 @@ function App() {
                 <Dictionary />
             </main>
             <footer className="App-footer">
-                This page was coded by <a href="#">Szidonia Bodo</a>, hosted on{" "}
-                <a href="#">Netlify</a>, and the source can be found on{" "}
-                <a href="#">GitHub</a>.
+                This page was coded by{" "}
+                <a href="https://szido-portfolio.netlify.app/" target="_blank">
+                    Szidonia Bodo
+                </a>
+                , hosted on{" "}
+                <a
+                    href="https://app.netlify.com/teams/bodoszidi/projects"
+                    target="_blank"
+                >
+                    Netlify
+                </a>
+                , and the source can be found on{" "}
+                <a href="https://github.com/bodoszidi" target="_blank">
+                    GitHub
+                </a>
+                .
             </footer>
         </div>
     );
