@@ -5,7 +5,7 @@ export default function Result(props) {
     console.log('result:', props.results)
     return (
         <div className="Result ">
-            <h2 className="d-flex flex-wrap justify-content-start">{props.results.word}</h2>
+            <h2 className="d-flex flex-column flex-md-row flex-wrap justify-content-start">{props.results.word}</h2>
 
             {props.results.meanings.map((meaning, index) => {
                 return (
