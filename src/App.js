@@ -12,7 +12,11 @@ function App() {
             </main>
             <footer className="App-footer">
                 This page was coded by{" "}
-                <a href="https://szido-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://szido-portfolio.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Szidonia Bodo
                 </a>
                 , hosted on{" "}
@@ -24,7 +28,11 @@ function App() {
                     Netlify
                 </a>
                 , and the source can be found on{" "}
-                <a href="https://github.com/bodoszidi" target="_blank" rel="noopener noreferrer">
+                <a
+                    href="https://github.com/bodoszidi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     GitHub
                 </a>
                 .
