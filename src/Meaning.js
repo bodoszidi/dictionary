@@ -4,7 +4,7 @@ export default function Meaning({ meaning }) {
     function ExampleContent({ example }) {
         if (example && example.length > 0) {
             return (
-                <div className="d-flex ">
+                <div className="d-flex flex-column flex-md-row">
                     <h2 className="me-2">
                         Example:{" "}
                     </h2>
@@ -18,7 +18,7 @@ export default function Meaning({ meaning }) {
 
     return (
         <div className="Meaning">
-            <div className="d-flex flex-wrap justify-content-start">
+            <div className="d-flex flex-column flex-md-row flex-wrap justify-content-start">
                 <h3 className="me-2">Definition: </h3>
                 <p className="m-2 p-1">{meaning.definition}</p>
             </div>
