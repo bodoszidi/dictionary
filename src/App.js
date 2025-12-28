@@ -6,10 +6,11 @@ function App() {
         <div className="App">
             <div className="container">
                 <header className="App-header">Find your words</header>
-            </div>
+           
             <main>
                 <Dictionary />
             </main>
+             </div>
             <footer className="App-footer">
                 This page was coded by{" "}
                 <a

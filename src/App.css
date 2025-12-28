@@ -1,3 +1,7 @@
+.container{
+    padding: 25px;
+    box-shadow:2px 2px 5px #4469d7;
+}
 .App {
     text-align: center;
     background-color: #192959;
@@ -8,12 +12,11 @@
 }
 
 .App-header {
-    display: flex;
-    justify-content: center;
-
+    margin: 0 auto;
     font-size: 40px;
     color: #04bdb6;
 }
 footer {
+    padding-top: 15px;
     color: #04bdb6;
 }

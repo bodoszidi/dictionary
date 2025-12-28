@@ -24,7 +24,7 @@ export default function Dictionary() {
     }
     return (
         <div className="Dictionary">
-            <form onSubmit={search} className="d-flexlex gap-2">
+            <form onSubmit={search} className="d-flex justify-content-center gap-2">
                 <input
                     type="search"
                     className=""
