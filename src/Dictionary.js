@@ -24,11 +24,7 @@ export default function Dictionary() {
     }
     return (
         <div className="Dictionary">
-            <form onSubmit={search} className="d-flexlex gap-2" {
-                constructor(parameters) {
-                    
-                }
-            }>
+            <form onSubmit={search} className="d-flexlex gap-2">
                 <input
                     type="search"
                     className=""
