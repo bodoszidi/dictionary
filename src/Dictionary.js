@@ -9,13 +9,22 @@ export default function Dictionary() {
     const apiKey = "fbe0f372ad6btocdfb0c2b3e5a4f5432";
 
     function handelResponse(response) {
-        setResult(response.data)
+        console.log("res:", response);
+        if (response.data.status) {
+            alert(response.data.message);
+        } else {
+            setResult(response.data);
+        }
     }
 
     function search(event) {
         event.preventDefault();
         const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyWord}&key=${apiKey}`;
-        axios.get(apiUrl).then(handelResponse);
+        axios.get(apiUrl)
+            .then(handelResponse)
+            .catch(error => {
+                alert(error)
+            });
     }
 
     function handelKeywordChange(event) {
@@ -40,8 +49,7 @@ export default function Dictionary() {
                 </button>
             </form>
 
-        {result && <Result results={result}/>}
-        
+            {result && <Result results={result} />}
         </div>
     );
 }
