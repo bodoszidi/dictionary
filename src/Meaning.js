@@ -1,3 +1,5 @@
+import Synonyms from "./Synonyms";
+
 export default function Meaning({ meaning }) {
     console.log("meaning:", meaning);
 
@@ -24,7 +26,7 @@ export default function Meaning({ meaning }) {
             </div>
 
             <ExampleContent example={meaning.example} />
-            < Synonyms />
+            < Synonyms synonyms={meaning.synonyms}/>
         </div>
     );
 }

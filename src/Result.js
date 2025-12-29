@@ -2,10 +2,12 @@ import Meaning from "./Meaning";
 import "./Result.css";
 
 export default function Result(props) {
-    console.log('result:', props.results)
+    console.log("result:", props.results);
     return (
         <div className="Result ">
-            <h2 className="d-flex flex-column flex-md-row flex-wrap justify-content-start">{props.results.word} - {props.results.phonetic}</h2>
+            <h2 className="d-flex flex-column flex-md-row flex-wrap justify-content-start">
+                {props.results.word} - {props.results.phonetic}
+            </h2>
             {props.results.meanings.map((meaning, index) => {
                 return (
                     <div key={index}>
