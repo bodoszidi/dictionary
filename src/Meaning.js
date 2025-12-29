@@ -24,6 +24,7 @@ export default function Meaning({ meaning }) {
             </div>
 
             <ExampleContent example={meaning.example} />
+            < Synonyms />
         </div>
     );
 }
