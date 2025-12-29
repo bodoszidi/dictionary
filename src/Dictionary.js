@@ -8,8 +8,8 @@ export default function Dictionary() {
     const [results, setResults] = useState(null);
 
     function handelResponse(response) {
-        console.log('handleRes', response);
-        
+        console.log("handleRes", response);
+
         if (response.data.status) {
             alert(response.data.statusText);
         } else {
@@ -20,10 +20,11 @@ export default function Dictionary() {
     function search(event) {
         event.preventDefault();
         const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
-        axios.get(apiUrl)
+        axios
+            .get(apiUrl)
             .then(handelResponse)
-            .catch(error => {
-                alert(error)
+            .catch((error) => {
+                alert(error);
             });
     }
 
@@ -48,8 +49,12 @@ export default function Dictionary() {
                     Search
                 </button>
             </form>
-
-            {results && <Results results={results} />}
+            {results &&
+                results.map((result, index) => (
+                    <div key={index}>
+                        <Results results={result} />
+                    </div>
+                ))}
         </div>
     );
 }
