@@ -1,10 +1,10 @@
 .container{
     padding: 25px;
-    box-shadow:2px 2px 5px #4469d7;
+    box-shadow:2px 2px 5px #4565c2;
 }
 .App {
     text-align: center;
-    background-color: #192959;
+    background-color: #293454;
     font-family: "Irish Grover", system-ui;
     font-weight: 400;
     padding: 20px 20px;
@@ -14,7 +14,7 @@
 .App-header {
     margin: 0 auto;
     font-size: 40px;
-    color: #04bdb6;
+    color: #23beb9;
 }
 footer {
     padding-top: 15px;

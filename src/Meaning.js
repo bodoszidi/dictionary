@@ -1,16 +1,15 @@
 import Synonyms from "./Synonyms";
 
 export default function Meaning({ meaning }) {
-    console.log("meaning:", meaning);
 
     function ExampleContent({ example }) {
         if (example && example.length > 0) {
             return (
                 <div className="d-flex flex-column flex-md-row">
-                    <h2 className="me-2">
+                    <h5 className="p-1">
                         Example:{" "}
-                    </h2>
-                    <p className="m-2 p-1">
+                    </h5>
+                    <p className="m-1">
                         <em>{example}</em>
                     </p>
                 </div>
@@ -20,9 +19,11 @@ export default function Meaning({ meaning }) {
 
     return (
         <div className="Meaning">
+            <h3 className="me-2 d-flex flex-column flex-md-row flex-wrap justify-content-start">{meaning.partOfSpeech} </h3>
             <div className="d-flex flex-column flex-md-row flex-wrap justify-content-start">
-                <h3 className="me-2">Definition: </h3>
-                <p className="m-2 p-1">{meaning.definition}</p>
+                
+                <h5 className="p-1">Definition: </h5>
+                <p className="m-1">{meaning.definition}</p>
             </div>
 
             <ExampleContent example={meaning.example} />
