@@ -1,8 +1,6 @@
 import Synonyms from "./Synonyms";
 
 export default function Meaning({ meaning }) {
-    console.log("meaning:", meaning);
-
     function ExampleContent({ example }) {
         if (example && example.length > 0) {
             return (

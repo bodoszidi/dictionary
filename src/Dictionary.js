@@ -8,17 +8,21 @@ export default function Dictionary() {
     const [keyWord, setKeyword] = useState("");
     const [results, setResults] = useState(null);
     const [photos, setPhotos] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
 
     function handelResponse(response) {
         if (response.data.status) {
-            alert(response.data.statusText);
+            setResults(null);
+            setPhotos([]);
+            setErrorMessage("No information found!");
         } else {
             setResults(response.data);
+            setErrorMessage("");
         }
     }
 
     function handelPhotoResponse(response) {
-            setPhotos(response.data.photos);
+        setPhotos(response.data.photos);
     }
 
     function search(event) {
@@ -27,8 +31,10 @@ export default function Dictionary() {
         axios
             .get(apiUrl)
             .then(handelResponse)
-            .catch((error) => {
-                alert(error);
+            .catch(() => {
+                setResults(null);
+                setPhotos([]);
+                setErrorMessage("No information found!");
             });
         const photoApiKey = "fbe0f372ad6btocdfb0c2b3e5a4f5432";
         const photoApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyWord}&key=${photoApiKey}`;
@@ -56,6 +62,8 @@ export default function Dictionary() {
                     Search
                 </button>
             </form>
+            {errorMessage && <h2 className="text-center text-danger">{errorMessage}</h2>}
+
             {results &&
                 results.map((result, index) => (
                     <div key={index}>
