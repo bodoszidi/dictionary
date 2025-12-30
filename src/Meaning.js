@@ -26,15 +26,15 @@ export default function Meaning({ meaning }) {
                 {meaning.definitions.map((defi, index) => {
                     return (
                         <div key={index}>
-                        <p  className="m-1">{defi.definition}</p>
-                        <ExampleContent example={defi.example} />
-                       {defi.synonyms &&  <Synonyms synonyms={defi.synonyms} />}
+                            <p className="m-1">{defi.definition}</p>
+                            <ExampleContent example={defi.example} />
+                            {defi.synonyms && (
+                                <Synonyms synonyms={defi.synonyms} />
+                            )}
                         </div>
-                    )
+                    );
                 })}
             </div>
-
-            
         </div>
     );
 }
