@@ -4,7 +4,7 @@
 }
 .App {
     text-align: center;
-    background-color: #293454;
+    background-color: #192959;
     font-family: "Irish Grover", system-ui;
     font-weight: 400;
     padding: 20px 20px;
@@ -14,7 +14,7 @@
 .App-header {
     margin: 0 auto;
     font-size: 40px;
-    color: #23beb9;
+    color: #04bdb6;
 }
 footer {
     padding-top: 15px;
