@@ -17,7 +17,7 @@ export default function Meaning({ meaning }) {
     }
 
     return (
-        <div className="Meaning">
+        <div className="Meaning container">
             <h3 className="me-2 d-flex flex-column align-items-start text-start">
                 {meaning.partOfSpeech}{" "}
             </h3>
